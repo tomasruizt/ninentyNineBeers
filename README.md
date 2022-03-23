@@ -1,5 +1,18 @@
 # 99 Beers (in R)
 
+### Project Structure
+There are two important files in this git repo:
+
+1. The tests: `tests/testthat/test-ninety_nine_beers.R`
+2. The implementation: `R/ninety_nine_beers.R`
+
+### Setup
+1. Install R (depending on your system, Google may be the quickest)
+2. In this folder, open R. Then type the command below:
+```R
+> renv::restore()
+```
+
 ### Running the generation
 To generate the lyrics of 99 bottles of beer execute the command:
 ```shell
