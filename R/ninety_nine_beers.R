@@ -27,6 +27,7 @@ generate_all_pairs <- function(n) {
 }
 
 generate_lyrics_str <- function(n = 99) {
+  stopifnot(is.numeric(n), n > 0)
   pairs <- generate_all_pairs(n = n)
   pairs %>%
     map(paste, collapse = "\n") %>%
