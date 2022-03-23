@@ -17,7 +17,7 @@ test_that("we can generate the pair about '1 bottle of beer'", {
   expect_equal(generated, last(all_pairs, n = 2))
 })
 
-test_that("we can generate the the lyrics for 2 beers", {
+test_that("we can generate the lyrics for 2 beers", {
   expected <- list(generate_pair(2), generate_pair(1), generate_last_pair(n = 2))
   expect_equal(generate_all_pairs(n = 2), expected)
 
@@ -26,7 +26,7 @@ test_that("we can generate the the lyrics for 2 beers", {
   })
 })
 
-test_that("we can generate the 300 chars of the lyrics", {
+test_that("we can generate the first 300 chars of the lyrics", {
   n_chars <- 300
   lyrics_str <- readChar("lyrcs.txt", nchars = n_chars)
   generated <- substr(generate_lyrics_str(), start = 1, stop = n_chars)
