@@ -10,11 +10,11 @@ generate_last_pair <- function(n) {
          n_bottles = if (n == 1) "1 bottle" else glue("{n} bottles")))
 }
 
-generate_pair <- function(ns) {
-  c(glue("{ns} bottle{s} of beer on the wall, {ns} bottle{s} of beer", s = if (ns == 1) "" else "s"),
+generate_pair <- function(n) {
+  c(glue("{n} bottle{s} of beer on the wall, {n} bottle{s} of beer", s = if (n == 1) "" else "s"),
     glue("Take one down and pass it around, {num} bottle{s} of beer on the wall",
-         num = if (ns == 1) "no more" else ns - 1,
-         s = if (ns == 2) "" else "s")
+         num = if (n == 1) "no more" else n - 1,
+         s = if (n == 2) "" else "s")
   )
 }
 

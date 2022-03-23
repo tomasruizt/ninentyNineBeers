@@ -8,7 +8,7 @@ test_that("we can generate the last pair", {
 })
 
 test_that("we can generate some intermediate pair", {
-  generated <- generate_pair(ns = 35)
+  generated <- generate_pair(n = 35)
   expect_equal(generated, expected = all_pairs[[length(all_pairs) - 35]])
 })
 
