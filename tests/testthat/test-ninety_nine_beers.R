@@ -26,7 +26,7 @@ test_that("we can generate the the lyrics for 2 beers", {
   })
 })
 
-test_that("we can generate the 100 chars of the lyrics", {
+test_that("we can generate the 300 chars of the lyrics", {
   n_chars <- 300
   lyrics_str <- readChar("lyrcs.txt", nchars = n_chars)
   generated <- substr(generate_lyrics_str(), start = 1, stop = n_chars)
